@@ -21,59 +21,59 @@ hi CursorColumn term=reverse cterm=reverse gui=reverse
 hi CursorLine term=reverse cterm=reverse gui=reverse
 hi ErrorMsg term=reverse ctermfg=Red ctermbg=Black guifg=Red guibg=Black
 hi ModeMsg term=reverse cterm=reverse gui=reverse
-hi NonText term=bold ctermfg=DarkBlue guifg=DarkBlue
-hi SpecialKey term=NONE ctermfg=Brown guifg=Brown
+hi NonText term=bold ctermfg=DarkBlue guifg=#0000c0
+hi SpecialKey term=NONE ctermfg=Brown guifg=#c0c000
 hi StatusLine term=reverse cterm=reverse gui=reverse
 hi Visual term=reverse cterm=reverse gui=reverse
-hi WarningMsg term=reverse ctermfg=Brown guifg=Brown
+hi WarningMsg term=reverse ctermfg=Brown guifg=#c0c000
 
 " Syntax Colors, General
-hi Comment term=reverse ctermfg=Black ctermbg=DarkCyan guifg=Black guibg=DarkCyan
+hi Comment term=reverse ctermfg=Black ctermbg=DarkCyan guifg=Black guibg=#00c0c0
 hi Underlined term=underline cterm=underline gui=underline
 hi Ignore term=NONE cterm=NONE gui=NONE
 hi Error term=bold ctermfg=Red ctermbg=Black guifg=Red guibg=Black
 hi Todo term=reverse cterm=reverse gui=reverse
 
 " Constants (plain data)
-hi Constant term=bold cterm=bold ctermfg=Brown ctermbg=Black gui=bold guifg=Brown guibg=Black
-"hi Boolean term=NONE cterm=NONE gui=NONE
-"hi Character term=NONE cterm=NONE gui=NONE
-"hi String term=NONE cterm=NONE gui=NONE
-"hi Number term=NONE cterm=NONE gui=NONE
-"hi Float term=NONE cterm=NONE gui=NONE
+hi Constant term=bold cterm=bold ctermfg=Brown ctermbg=Black gui=bold guifg=#c0c000 guibg=Black
+hi def link Boolean Constant
+hi def link Character Constant
+hi def link String Constant
+hi def link Number Constant
+hi def link Float Constant
 
 " Identifiers (are things)
-hi Identifier term=NONE cterm=NONE ctermfg=DarkCyan ctermbg=Black gui=NONE guifg=DarkCyan ctermbg=Black
-"hi Function term=bold cterm=bold gui=bold
+hi Identifier term=NONE cterm=NONE ctermfg=DarkCyan ctermbg=Black gui=NONE guifg=#00c0c0 ctermbg=Black
+hi def link Function Identifier
 
 " Statements (do things)
-hi Statement term=bold ctermfg=DarkGreen ctermbg=Black guifg=DarkGreen ctermbg=Black
-"hi Conditional term=NONE cterm=NONE gui=NONE
-"hi Repeat term=NONE cterm=NONE gui=NONE
-"hi Label term=NONE cterm=NONE gui=NONE
-"hi Operator term=NONE cterm=NONE gui=NONE
-"hi Keyword term=bold cterm=bold gui=bold
-"hi Exception term=NONE cterm=NONE gui=NONE
+hi Statement term=bold ctermfg=DarkGreen ctermbg=Black guifg=#00c000 ctermbg=Black
+hi def link Conditional Statement
+hi def link Repeat Statement
+hi def link Label Statement
+hi def link Operator Statement
+hi def link Keyword Statement
+hi def link Exception Statement
 
 " Preprocessing (meta)
-hi PreProc term=bold cterm=NONE ctermfg=DarkGreen ctermbg=Black gui=NONE guifg=DarkGreen guibg=Black
-"hi Include term=NONE cterm=NONE gui=NONE
-"hi Define term=NONE cterm=NONE gui=NONE
-"hi Macro term=NONE cterm=NONE gui=NONE
-"hi PreCondit term=NONE cterm=NONE gui=NONE
+hi PreProc term=bold cterm=NONE ctermfg=DarkGreen ctermbg=Black gui=NONE guifg=#00c000 guibg=Black
+hi def link Include PreProc
+hi def link Define PreProc
+hi def link Macro PreProc
+hi def link PreCondit PreProc
 
 " Types (define things)
-hi Type term=NONE cterm=bold ctermfg=DarkCyan ctermbg=Black gui=Bold guifg=DarkCyan guibg=Black
-"hi StorageClass term=NONE cterm=NONE gui=NONE
-"hi Structure term=NONE cterm=NONE gui=NONE
-"hi Typedef term=NONE cterm=NONE gui=NONE
+hi Type term=NONE cterm=bold ctermfg=DarkCyan ctermbg=Black gui=Bold guifg=#00c0c0 guibg=Black
+hi def link StorageClass Type
+hi def link Structure Type
+hi def link Typedef Type
 
 " Special (undef)
-hi Special term=NONE cterm=NONE ctermfg=Brown ctermbg=Black gui=NONE guifg=Brown guibg=Black
-"hi Tag term=NONE cterm=NONE gui=NONE
-"hi SpecialChar term=NONE cterm=NONE gui=NONE
-"hi Delimiter term=NONE cterm=NONE gui=NONE
-"hi SpecialComment term=NONE cterm=NONE gui=NONE
-"hi Debug term=NONE cterm=NONE gui=NONE
+hi Special term=NONE cterm=NONE ctermfg=Brown ctermbg=Black gui=NONE guifg=#c0c000 guibg=Black
+hi def link Tag Special
+hi def link SpecialChar Special
+hi def link Delimiter Special
+hi def link SpecialComment Special
+hi def link Debug Special
 
 " vim: sw=2
