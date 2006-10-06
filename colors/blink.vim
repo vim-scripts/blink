@@ -15,16 +15,16 @@ let colors_name = "blink"
 hi Normal term=NONE cterm=NONE ctermfg=Gray ctermbg=Black gui=NONE guifg=Gray guibg=Black
 
 " Vim colors (reverse for highlighting, red for errors, brown for special)
-hi Cursor term=reverse cterm=reverse gui=reverse
-hi CursorIME term=reverse cterm=reverse gui=reverse
-hi CursorColumn term=reverse cterm=reverse gui=reverse
-hi CursorLine term=reverse cterm=reverse gui=reverse
+hi Cursor term=reverse cterm=reverse
+hi CursorIME term=reverse cterm=reverse
+hi CursorColumn term=reverse cterm=reverse
+hi CursorLine term=reverse cterm=reverse
 hi ErrorMsg term=reverse ctermfg=Red ctermbg=Black guifg=Red guibg=Black
-hi ModeMsg term=reverse cterm=reverse gui=reverse
+hi ModeMsg term=reverse cterm=reverse
 hi NonText term=bold ctermfg=DarkBlue guifg=#0000c0
 hi SpecialKey term=NONE ctermfg=Brown guifg=#c0c000
-hi StatusLine term=reverse cterm=reverse gui=reverse
-hi Visual term=reverse cterm=reverse gui=reverse
+hi StatusLine term=reverse cterm=reverse
+hi Visual term=reverse cterm=reverse gui=NONE guifg=bg guibg=fg
 hi WarningMsg term=reverse ctermfg=Brown guifg=#c0c000
 
 " Syntax Colors, General
